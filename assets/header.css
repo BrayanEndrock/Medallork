@@ -2,9 +2,11 @@
     position: relative;
 }
 
-.header__container:hover {
-    box-shadow: 0 0 4px 4px #00000026;
-    transition: all var(--transition-short-duration) ease-in-out;
+@media screen and (min-width: 769px) {
+    .header__container:hover {
+        box-shadow: 0 0 4px 4px #00000026;
+        transition: all var(--transition-short-duration) ease-in-out;
+    }
 }
 
 .header__announcement-bar {
@@ -38,4 +40,23 @@
     display: block;
     margin: 0 auto;
     width: 180px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        box-shadow: 0 0 4px 4px #00000026;
+    }
+
+    .header__announcement-bar {
+        padding: 10px;
+    }
+
+    .header__announcement-bar--message {
+        font-size: var(--font-body-size);
+        margin: 0 auto;
+    }
+
+    .brand__logo {
+        width: 120px;
+    }
 }
