@@ -65,3 +65,22 @@ small {
 section {
     position: relative;
 }
+
+.slick-arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.slick-arrow:focus {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.slick-arrow:focus-visible {
+    background: none;
+    border: none;
+    outline: none;
+}

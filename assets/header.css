@@ -9,24 +9,6 @@
     }
 }
 
-.header__announcement-bar {
-    background-color: var(--dark-color);
-    padding: 15px 10px;
-}
-
-.header__announcement-bar--message {
-    color: var(--light-color);
-    font-family: var(--font-body-family);
-    font-size: var(--font-caption-size);
-    font-weight: var(--font-medium-weight);
-    text-align: center;
-}
-
-.header__announcement-bar--message span {
-    color: var(--accent-color);
-    font-weight: var(--font-bold-weight);
-}
-
 .header__navigation--logo {
     background-image:  url("../assets/header-background.png");
     background-color: transparent;
@@ -45,15 +27,6 @@
 @media screen and (max-width: 768px) {
     .header__container {
         box-shadow: 0 0 4px 4px #00000026;
-    }
-
-    .header__announcement-bar {
-        padding: 10px;
-    }
-
-    .header__announcement-bar--message {
-        font-size: var(--font-body-size);
-        margin: 0 auto;
     }
 
     .brand__logo {
