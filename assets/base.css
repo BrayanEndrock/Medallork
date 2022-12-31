@@ -8,6 +8,7 @@
 :root {
     --accent-color: #ccff00;
     --dark-color: #000;
+    --dark-gray-color: #a1a1a1;
     --light-color: #fff;
     --light-gray-color: #e9ecef;
 
@@ -48,9 +49,9 @@ h3,
 h4,
 h5,
 h6 {
-    letter-spacing: var(--font-letter-spacing);
-    margin: 0;
-    padding: 0;
+    letter-spacing: var(--font-letter-spacing) !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 div,
