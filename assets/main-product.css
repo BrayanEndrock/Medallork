@@ -231,3 +231,13 @@
 .product__shipping--text span {
     height: 25px;
 }
+
+.pattern {
+    background-color: var(--dark-color);
+    background-image: url('../assets/pattern.svg');
+    background-position: top;
+    background-repeat: repeat-x;
+    height: 35px;
+    margin: 0;
+    width: 100%;
+}

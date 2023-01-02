@@ -75,3 +75,8 @@ $(document).ready(function() {
 
     productThumbsSlider.slick(productThumbsGetSliderSettings());
 });
+
+var today = new Date();
+var year = today.getFullYear();
+
+document.querySelector('.footer__current-year').innerHTML = year;
