@@ -80,3 +80,23 @@ var today = new Date();
 var year = today.getFullYear();
 
 document.querySelector('.footer__current-year').innerHTML = year;
+
+// Sticky Buy Now Button
+
+document.addEventListener('DOMContentLoaded', function(){
+    setTimeout(() => {
+        if (window.screen.width <= 768) {
+  
+            const stickyBuyNow = document.querySelector('.sticky-buy-now'), 
+            positionToShow = document.querySelector('.product__buy-now');
+  
+            document.addEventListener('scroll', function() {
+                if (scrollY > positionToShow.offsetTop) {
+                    stickyBuyNow.classList.replace('sticky-buy-now--hidden', 'sticky-buy-now--showed');  
+                } else {
+                    stickyBuyNow.classList.replace('sticky-buy-now--showed', 'sticky-buy-now--hidden');
+                }
+            });
+        }
+    }, 1500);
+  });

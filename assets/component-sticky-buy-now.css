@@ -1,0 +1,56 @@
+.sticky-buy-now {
+    background-color: var(--light-color);
+    left: 0;
+    padding: 30px 10px;
+    position: fixed;
+    right: 0;
+    transition: all var(--transition-regular-duration) ease-in-out;
+    width: 100%;
+    z-index: 5;
+}
+
+.sticky-buy-now--hidden {
+    bottom: -100%;
+    transition: all var(--transition-regular-duration) ease-in-out;
+}
+
+.sticky-buy-now--showed {
+    bottom: 0;
+    transition: all var(--transition-regular-duration) ease-in-out;
+}
+
+.sticky-buy-now__button {
+    align-items: center;
+    background-color: var(--dark-color);
+    border: none;
+    border-radius: 40px;
+    color: var(--accent-color);
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-body-family);
+    font-size: var(--font-body-size);
+    font-weight: var(--font-demi-bold-weight);
+    gap: 5px;
+    justify-content: center;
+    padding: 16px 6px;
+    text-transform: uppercase;
+    transition: all var(--transition-regular-duration) ease-in-out;
+}
+
+.sticky-buy-now__button svg {
+    fill: var(--accent-color);
+    height: 30px;
+    width: 30px;
+    transition: all var(--transition-regular-duration) ease-in-out;
+}
+
+.sticky-buy-now__button:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    transition: all var(--transition-regular-duration) ease-in-out;
+}
+
+.sticky-buy-now__button:hover svg path {
+    fill: var(--dark-color);
+    transition: all var(--transition-regular-duration) ease-in-out;
+}
