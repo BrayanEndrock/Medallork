@@ -1,0 +1,133 @@
+.footer {
+    background-color: var(--dark-color);
+    padding: 50px 0;
+}
+
+.footer__grid--item:not(:first-of-type) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 601px) {
+    .footer__grid--item:nth-of-type(2) {
+        margin-bottom: 20px;
+    }
+}
+
+.footer__icon {
+    text-align: center;
+}
+
+.footer__icon > svg {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+    .footer__icon > svg {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .footer__icon > svg {
+        width: 65%;
+    }
+}
+
+.footer__grid--item h4 {
+    color: var(--accent-color);
+    font-family: var(--font-heading-family);
+    font-size: var(--font-subheading-size);
+    font-weight: var(--font-bold-weight);
+    text-transform: uppercase;
+}
+
+.footer__contact-us--item:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+}
+
+.footer__contact-us--item a {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__contact-us--item svg {
+    width: 24px;
+}
+
+.footer__contact-us--item svg path {
+    fill: var(--light-color);
+}
+
+.footer__contact-us--item span {
+    color: var(--light-color);
+    font-family: var(--font-body-family);
+    margin-left: 0.5rem;
+}
+
+.footer__contact-us--item a:hover svg path {
+    fill: var(--accent-color);
+    transition: all var(--transition-short-duration) linear;
+}
+
+.footer__contact-us--item a:hover span {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transition: all var(--transition-short-duration) linear;
+}
+
+.footer__follow-us--item a {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__follow-us--item svg {
+    width: 24px;
+}
+
+.footer__follow-us--item svg path {
+    fill: var(--light-color);
+}
+
+.footer__follow-us--item span {
+    color: var(--light-color);
+    font-family: var(--font-body-family);
+    margin-left: 0.5rem;
+}
+
+.footer__follow-us--item a:hover svg path {
+    fill: var(--accent-color);
+    transition: all var(--transition-short-duration) linear;
+}
+
+.footer__follow-us--item a:hover span {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transition: all var(--transition-short-duration) linear;
+}
+
+.footer__copyright {
+    text-align: center;
+}
+
+.footer__copyright--container {
+    text-align: center;
+}
+
+.footer__copyright--richtext {
+    color: var(--accent-color);
+    font-family: var(--font-body-family);
+    font-size: var(--font-caption-size);
+    letter-spacing: var(--font-letter-spacing);
+    margin: 0 auto;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.footer__copyright--richtext > strong {
+    font-family: var(--font-heading-family);
+    font-weight: var(--font-demi-bold-weight);
+}

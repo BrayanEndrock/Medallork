@@ -1,0 +1,87 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* General */
+
+:root {
+    --accent-color: #ccff00;
+    --dark-color: #000;
+    --dark-gray-color: #a1a1a1;
+    --light-color: #fff;
+    --light-gray-color: #e9ecef;
+
+    --font-heading-family: 'Barlow Semi Condensed', sans-serif;
+    --font-body-family: 'DM Sans', sans-serif;
+
+    --font-heading-size: 32px;
+    --font-subheading-size: 24px;
+    --font-caption-size: 18px;
+    --font-body-size: 16px;
+
+    --font-letter-spacing: 0;
+
+    --font-thin-weight: 100;
+    --font-extra-light-weight: 200;
+    --font-light-weight: 300;
+    --font-regular-weight: 400;
+    --font-medium-weight: 500;
+    --font-demi-bold-weight: 600;
+    --font-bold-weight: 700;
+    --font-extra-bold-weight: 800;
+    --font-black-weight: 900;
+
+    --transition-short-duration: 0.2s;
+    --transition-regular-duration: 0.5s;
+    --transition-long-duration: 0.8s;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: var(--font-letter-spacing) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+div,
+p,
+span,
+small {
+    letter-spacing: var(--font-letter-spacing);
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+}
+
+.slick-arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.slick-arrow:focus {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.slick-arrow:focus-visible {
+    background: none;
+    border: none;
+    outline: none;
+}
